@@ -34,3 +34,8 @@ models:
             values:
               - "success"
               - "fail"
+      - name: order_id
+        tests:
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
